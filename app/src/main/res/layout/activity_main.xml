@@ -1,36 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="10dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/miboton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="oli" />
+    <ImageView
+        android:id="@+id/covidTitleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/covid_bolivia_title"/>
 
-    <ScrollView
-        android:id="@+id/SCROLLER_ID"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:fillViewport="true">
+    <GridView
+        android:id="@+id/infoCardGridView"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:numColumns="3"
+        android:columnWidth="120dp"
+        android:stretchMode="spacingWidthUniform"
+        android:layout_below="@id/covidTitleImageView"/>
 
-        <TextView
-            android:id="@+id/firstText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/boliviaMapImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/infoCardGridView"
+        android:layout_above="@id/reloadDataButton"
+        android:src="@drawable/bolivia_map"
+        android:layout_marginBottom="20dp"/>
 
-    </ScrollView>
+     <Button
+         android:id="@+id/reloadDataButton"
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:text="RECARGAR DATOS"
+         android:textColor="@android:color/white"
+         android:background="@color/colorPrimary"
+         android:textFontWeight="700"
+         android:layout_alignParentBottom="true"/>
 
-
-
-</LinearLayout>
+</RelativeLayout>

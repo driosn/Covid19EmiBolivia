@@ -73,4 +73,18 @@ public class Utils {
         }
     }
 
+    public static int checkDepartmentByRGB(int r, int g, int b) {
+        if(r == Globals.BENI_RGB[0] && g == Globals.BENI_RGB[1] && b == Globals.BENI_RGB[2])                   return Globals.BENI_INDEX;
+        if(r == Globals.CHUQUISACA_RGB[0] && g == Globals.CHUQUISACA_RGB[1] && b == Globals.CHUQUISACA_RGB[2]) return Globals.CHUQUISACA_INDEX;
+        if(r == Globals.COCHABAMBA_RGB[0] && g == Globals.COCHABAMBA_RGB[1] && b == Globals.COCHABAMBA_RGB[2]) return Globals.COCHABAMBA_INDEX;
+        if(r == Globals.LAPAZ_RGB[0] && g == Globals.LAPAZ_RGB[1] && b == Globals.LAPAZ_RGB[2])                return Globals.LAPAZ_INDEX;
+        if(r == Globals.ORURO_RGB[0] && g == Globals.ORURO_RGB[1] && b == Globals.ORURO_RGB[2])                return Globals.ORURO_INDEX;
+        if(r == Globals.PANDO_RGB[0] && g == Globals.PANDO_RGB[1] && b == Globals.PANDO_RGB[2])                return Globals.PANDO_INDEX;
+        if(r == Globals.POTOSI_RGB[0] && g == Globals.POTOSI_RGB[1] && b == Globals.POTOSI_RGB[2])             return Globals.POTOSI_INDEX;
+        if(r == Globals.SANTACRUZ_RGB[0] && g == Globals.SANTACRUZ_RGB[1] && b == Globals.SANTACRUZ_RGB[2])    return Globals.SANTACRUZ_INDEX;
+        if(r == Globals.TARIJA_RGB[0] && g == Globals.TARIJA_RGB[1] && b == Globals.TARIJA_RGB[2])             return Globals.TARIJA_INDEX;
+
+        return -1;
+    }
+
 }
