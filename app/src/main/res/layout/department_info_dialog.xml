@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingHorizontal="5dp"
+    android:paddingTop="30dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/departmentNameDialogTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textFontWeight="700"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="Nombre del deparamento"/>
+
+    <ImageView
+        android:id="@+id/departmentDialogImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:padding="20dp"
+        android:src="@drawable/recovered_logo" />
+
+    <ListView
+        android:id="@+id/departmentInfoListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>

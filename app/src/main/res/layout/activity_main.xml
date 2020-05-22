@@ -7,6 +7,13 @@
     android:paddingTop="10dp"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/worldLogoButton"
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/world_logo_button"/>
+
     <ImageView
         android:id="@+id/covidTitleImageView"
         android:layout_width="match_parent"

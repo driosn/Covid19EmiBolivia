@@ -1,5 +1,7 @@
 package globals;
 
+import com.example.covid19sistemas7mo.R;
+
 import java.util.ArrayList;
 
 public class Globals {
@@ -40,10 +42,21 @@ public class Globals {
     public static int CHUQUISACA_RGB[] = {239, 102, 231};
     public static int COCHABAMBA_RGB[] = {243, 226, 16};
     public static int LAPAZ_RGB[] = {87, 228, 222};
-    public static int ORURO_RGB[] = {191, 158, 153};
+    public static int ORURO_RGB[] = {191, 188, 153};
     public static int PANDO_RGB[] = {158, 239, 163};
     public static int POTOSI_RGB[] = {242, 239, 188};
     public static int SANTACRUZ_RGB[] = {225, 149, 188};
     public static int TARIJA_RGB[] = {143, 178, 236};
 
+    public static int BOLIVIA_MAP_IMAGES[] = {
+                                                R.drawable.beni,
+                                                R.drawable.chuquisaca,
+                                                R.drawable.cochabamba,
+                                                R.drawable.la_paz,
+                                                R.drawable.oruro,
+                                                R.drawable.pando,
+                                                R.drawable.potosi,
+                                                R.drawable.santa_cruz,
+                                                R.drawable.tarija,
+                                            };
 }
